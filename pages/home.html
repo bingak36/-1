@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>고객지원 | CoolRoute</title>
+<title>CoolRoute — 편의점 콜드체인 물류 전문기업</title>
 <meta name="description" content="CoolRoute는 편의점 냉장·냉동 상품의 발주·배송·재고를 연결하는 콜드체인 물류 전문기업입니다. 전국 6개 저온 물류센터, 99.8% 온도 준수율, 24시간 온도 관제.">
 <meta name="keywords" content="콜드체인,편의점 물류,냉장 배송,냉동 물류,저온 물류,온도 관제,CoolRoute">
 <meta name="author" content="CoolRoute">
@@ -28,7 +28,7 @@
 <link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='6' fill='%232563eb'/%3E%3Cpath d='M12 2v20M2 12h20M5 5l14 14M19 5L5 19' stroke='white' stroke-width='2' stroke-linecap='round' fill='none'/%3E%3C/svg%3E">
 <!-- PWA manifest (inline) -->
 <link rel="manifest" href="data:application/json,%7B%22name%22%3A%22CoolRoute%22%2C%22short_name%22%3A%22CoolRoute%22%2C%22start_url%22%3A%22.%22%2C%22display%22%3A%22standalone%22%2C%22background_color%22%3A%22%23fbfafe%22%2C%22theme_color%22%3A%22%232563eb%22%7D">
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../styles.css">
 <!-- JSON-LD: Organization -->
 <script type="application/ld+json">
 {
@@ -84,45 +84,105 @@
   <a href="#" class="pill pill-pri" style="justify-content:center;margin-top:6px" data-i18n="nav.login">로그인</a>
 </div>
 
-<main id="app" data-page="support" aria-live="polite">
-<div class="page active" id="page-support">
-  <section class="pagehero"><div class="wrap">
-    <div class="crumb"><a href="#home">홈</a> › <b>고객지원</b></div>
-    <h1>고객지원</h1>
-    <p>공지사항, 자주 묻는 질문, 문의 안내까지 CoolRoute 이용을 돕습니다.</p>
-  </div></section>
-  <nav class="subnav"><div class="wrap">
-    <a href="#support">공지사항</a><a href="#faq">자주 묻는 질문</a><a href="#faq">이용안내</a><a href="#contact">문의안내</a>
-  </div></nav>
-  <section class="pg-sec"><div class="wrap">
-    <div class="sup-grid">
-      <div class="reveal">
-        <div class="notice glass" style="margin-bottom:22px">
-          <div class="nh"><div class="nt"><span class="b new">공지</span><a href="#">콜드체인 통합 관리 시스템 정기 점검 안내</a></div><span class="dt">2026.06.18</span></div>
-          <div class="nh"><div class="nt"><span class="b">안내</span><a href="#">온도 모니터링 경고 기준 업데이트 안내</a></div><span class="dt">2026.06.10</span></div>
-          <div class="nh"><div class="nt"><span class="b">안내</span><a href="#">배송기사용 시스템 배송 경로 기능 개선</a></div><span class="dt">2026.05.29</span></div>
-          <div class="nh"><div class="nt"><span class="b" style="background:rgba(37,99,235,.1);color:#2563eb">보도</span><a href="#">CoolRoute, 영남 냉동 거점 증설로 처리량 30% 확대</a></div><span class="dt">2026.05.14</span></div>
-          <div class="nh"><div class="nt"><span class="b" style="background:rgba(37,99,235,.1);color:#2563eb">보도</span><a href="#">온도 준수율 99.8% 달성 · 콜드체인 표준 운영 발표</a></div><span class="dt">2026.04.22</span></div>
-          <div class="nh"><div class="nt"><span class="b">안내</span><a href="#">개인정보처리방침 개정 안내 (시행 2026.04.01)</a></div><span class="dt">2026.03.25</span></div>
-        </div>
-        <h3 style="color:var(--text);font-size:1.1rem;margin:0 0 14px 2px" id="faq">자주 묻는 질문 · 이용안내</h3>
-        <details class="faq" open><summary>시스템은 어떻게 이용하나요?<span class="pm"></span></summary><div class="a">상단 로그인에서 점주·배송기사·물류센터 중 역할을 선택해 로그인하면, 역할별 대시보드에서 발주·배송·재고·온도 상태를 확인하고 업무를 처리할 수 있습니다.</div></details>
-        <details class="faq"><summary>물류 데이터는 어디서 확인하나요?<span class="pm"></span></summary><div class="a">발주·배송·재고·입출고·폐기 데이터는 로그인 후 통합 관리 시스템 화면에서 실시간으로 확인할 수 있습니다.</div></details>
-        <details class="faq"><summary>온도 관리는 어떻게 표시되나요?<span class="pm"></span></summary><div class="a">냉장·냉동 상품과 창고·차량의 온도는 정상/경고 상태로 표시되며, 기준을 벗어나면 경고로 전환되어 즉시 확인할 수 있습니다.</div></details>
-        <details class="faq"><summary>역할별 화면은 어떻게 이용하나요?<span class="pm"></span></summary><div class="a">점주는 발주·배송·폐기 임박 확인, 배송기사는 배송 목록·완료·미배송 처리, 물류센터는 재고·발주·입출고 관리 화면을 이용합니다.</div></details>
+<main id="app" data-page="home" aria-live="polite">
+<div class="page active" id="page-home">
+  <section class="showcase reveal" id="top">
+    <div class="hero-slider" data-autoplay="10000">
+      <div class="hero-slide is-active"><img src="../images/hero-highway.png" alt="콜드체인 배송 차량이 일출 무렵 고속도로를 달리는 모습" fetchpriority="high"></div>
+      <div class="hero-slide"><img src="../images/hero-truck.png" alt="적정 온도를 유지하며 주행하는 CoolRoute 냉장·냉동 배송 차량" loading="lazy"></div>
+      <div class="hero-slide"><img src="../images/fleet-dock-dawn.png" alt="새벽 물류센터 도크에 정렬한 냉동 배송 차량" loading="lazy"></div>
+      <div class="hero-slide"><img src="../images/control-room.png" alt="여러 온도 화면을 운영하는 콜드체인 물류 관제실" loading="lazy"></div>
+    </div>
+    <div class="sc-cap"><div class="wrap">
+      <span class="chip showcase-chip"><span class="live"></span><span data-i18n="hero.chip">편의점 콜드체인 물류 전문기업</span></span>
+      <h2 data-i18n="sc.h2">적정 온도를 지키며 달리는<br>편의점 콜드체인 네트워크</h2>
+      <p data-i18n="sc.p">출고에서 점포 입고까지, 전 구간 온도를 잃지 않는 신선 물류를 운영합니다.</p>
+      <div class="hero-cta showcase-cta"><a href="#business" class="pill pill-pri" data-i18n="hero.cta1">사업분야 보기 →</a><a href="#" class="pill pill-ghost" data-action="consult" data-i18n="hero.cta2">도입 상담 요청</a></div>
+      <div class="showcase-trust">
+        <div><b data-count="3200" data-suffix="+">3,200+</b><span data-i18n="trust.1">전국 연결 점포</span></div>
+        <div><b data-count="99.8" data-suffix="%">99.8%</b><span data-i18n="trust.2">온도 준수율 · 최근 12개월</span></div>
+        <div><b data-count="6">6</b><span data-i18n="trust.3">권역 거점 센터</span></div>
+        <div><b>24h</b><span data-i18n="trust.4">실시간 온도 관제</span></div>
       </div>
-      <div class="contact glass reveal" style="animation-delay:.1s" id="contact">
-        <h3>문의 안내</h3>
-        <div class="ct-row"><div class="ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div><div><div class="k">문의 시간</div><div class="v">평일 09:00 ~ 18:00<small>주말 · 공휴일 휴무</small></div></div></div>
-        <div class="ct-row"><div class="ico"><svg viewBox="0 0 24 24"><path d="M8 6h13M8 12h13M8 18h13M3 6h.01M3 12h.01M3 18h.01"/></svg></div><div><div class="k">문의 유형</div><div class="v">시스템 · 물류 데이터 · 온도 관리<small>역할별 화면 이용 문의 포함</small></div></div></div>
-        <div class="ct-row"><div class="ico"><svg viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 5L2 7"/></svg></div><div><div class="k">이메일</div><div class="v">support@coolroute.co.kr<small>24시간 접수 · 순차 답변</small></div></div></div>
-        <a href="#" class="pill pill-ghost" style="margin-top:20px;width:100%;justify-content:center">문의 메일 보내기</a>
+    </div></div>
+  </section>
+
+  <!-- 전국 네트워크 지도 -->
+  <section class="pg-sec alt" id="network"><div class="wrap">
+    <div class="map-wrap">
+      <div class="map-left">
+        <div class="head head-left reveal"><div class="eyebrow">전국 6개 거점</div><h2 data-i18n="map.h">전국 콜드체인 물류 네트워크</h2><p data-i18n="map.p">권역별 6개 저온 물류센터가 전국 점포망의 신선 배송을 책임집니다.</p></div>
+        <div class="map-list reveal" style="animation-delay:.1s">
+        <div class="mrow"><span class="mn">수도</span><div><b>수도권 메인 허브</b><span data-i18n="map.1">서울·경기 냉장 피킹 · 야간 회차</span></div><span class="mt mt--ops">CUT 22:00</span></div>
+        <div class="mrow"><span class="mn">강원</span><div><b>강원 거점</b><span data-i18n="map.2">강원권 간선 연계 · 저온 중계</span></div><span class="mt mt--chill">0~10℃</span></div>
+        <div class="mrow"><span class="mn">충청</span><div><b>충청 크로스도크</b><span data-i18n="map.3">중부권 분기 · 긴급 재배차</span></div><span class="mt mt--ops">RE 30M</span></div>
+        <div class="mrow"><span class="mn">영남</span><div><b>영남 냉동 거점</b><span data-i18n="map.4">냉동 간편식·아이스크림 저온 보관</span></div><span class="mt mt--frozen">-18℃↓</span></div>
+        <div class="mrow"><span class="mn">호남</span><div><b>호남 물류</b><span data-i18n="map.5">호남권 출고 · 권역 혼재 처리</span></div><span class="mt mt--ambient">멀티존</span></div>
+        <div class="mrow"><span class="mn">제주</span><div><b>제주 연계망</b><span data-i18n="map.6">도서 지역 출고 이력 단일 리포트</span></div><span class="mt mt--ops">D+0</span></div>
+        </div>
+      </div>
+      <div class="map-figure reveal" role="img" aria-label="전국 6개 물류센터 위치 지도">
+        <div class="kr-canvas" id="krMap"></div>
       </div>
     </div>
   </div></section>
+
+  <!-- 핵심 서비스 -->
+  <section class="pg-sec"><div class="wrap">
+    <div class="head reveal"><div class="eyebrow">서비스 영역</div><h2>핵심 서비스</h2><p>CoolRoute가 제공하는 대표 물류 서비스입니다.</p></div>
+    <div class="svc-grid">
+      <a class="svc-card reveal" href="#biz-cold"><div class="svc-img"><img src="../images/warehouse-dock.png" alt="콜드 물류센터 도크에서 적정 온도로 출고하는 모습"></div><div class="svc-body"><h3>콜드체인 물류</h3><p>냉장·냉동 상품을 전 구간 온도 이탈 없이 보관·출고합니다.</p><span class="meta">자세히 보기 →</span></div></a>
+      <a class="svc-card reveal" style="animation-delay:.08s" href="#biz-cvs"><div class="svc-img"><img src="../images/store-delivery.png" alt="편의점 앞에서 신선식품을 입고하는 냉장 배송 차량"></div><div class="svc-body"><h3>편의점 물류</h3><p>점포 발주부터 입고 검수까지 배송 흐름을 관리합니다.</p><span class="meta">자세히 보기 →</span></div></a>
+      <a class="svc-card reveal" style="animation-delay:.16s" href="#biz-ops"><div class="svc-img"><img src="../images/fleet-dock-dawn.png" alt="새벽 물류센터 도크에 정렬한 냉동 배송 차량"></div><div class="svc-body"><h3>물류 운영 관리</h3><p>재고·배송·폐기 상태를 한 화면에서 통합 관리합니다.</p><span class="meta">자세히 보기 →</span></div></a>
+    </div>
+  </div></section>
+
+  <!-- 물류 흐름 -->
+  <section class="pg-sec alt"><div class="wrap">
+    <div class="head reveal"><div class="eyebrow">발주부터 폐기까지</div><h2>물류 흐름</h2><p>점포 발주부터 폐기 관리까지, 하나의 흐름으로 이어집니다.</p></div>
+    <div class="flow reveal">
+      <div class="step"><div class="nd"><svg viewBox="0 0 24 24"><path d="M5 7h14l-1 13H6zM9 7V5a3 3 0 0 1 6 0v2"/></svg></div><span class="si">STEP 01</span><h4>점포 발주</h4><p>점주가 상품을 발주합니다.</p></div>
+      <div class="step"><div class="nd"><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg></div><span class="si">STEP 02</span><h4>물류센터 승인</h4><p>센터가 주문을 승인합니다.</p></div>
+      <div class="step"><div class="nd"><svg viewBox="0 0 24 24"><path d="M3 9l9-6 9 6v11H3zM9 20v-6h6v6"/></svg></div><span class="si">STEP 03</span><h4>출고</h4><p>적정 온도로 피킹·출고합니다.</p></div>
+      <div class="step"><div class="nd"><svg viewBox="0 0 24 24"><path d="M1 5h13v11H1zM14 9h4l3 3v4h-7M5 19a2 2 0 1 0 .1 0M17 19a2 2 0 1 0 .1 0"/></svg></div><span class="si">STEP 04</span><h4>배송</h4><p>온도 유지하며 운송합니다.</p></div>
+      <div class="step"><div class="nd"><svg viewBox="0 0 24 24"><path d="M3 9l1-5h16l1 5M5 9v11h14V9M9 13h6"/></svg></div><span class="si">STEP 05</span><h4>점포 입고</h4><p>검수 후 입고를 완료합니다.</p></div>
+      <div class="step"><div class="nd"><svg viewBox="0 0 24 24"><path d="M3 6h18M8 6V4h8v2M19 6l-1 14H6L5 6"/></svg></div><span class="si">STEP 06</span><h4>폐기 관리</h4><p>임박 상품을 폐기 처리합니다.</p></div>
+    </div>
+  </div></section>
+
+  <section class="pg-sec alt split-section split-system"><div class="wrap">
+    <div class="head head-left reveal"><div class="eyebrow">역할별 시스템</div><h2>시스템 이용 안내</h2><p>역할에 맞는 물류 관리 시스템을 이용하세요.</p></div>
+    <div class="roles">
+      <div class="role reveal"><div class="ico"><svg viewBox="0 0 24 24"><path d="M3 21h18M5 21V8l7-5 7 5v13M9 21v-6h6v6"/></svg></div><h4>점주</h4><ul class="blist"><li>상품 발주 · 배송 상태 확인</li><li>폐기 임박 상품 확인</li></ul></div>
+      <div class="role reveal" style="animation-delay:.08s"><div class="ico"><svg viewBox="0 0 24 24"><path d="M1 3h15v13H1zM16 8h4l3 3v5h-7M5.5 18.5a2 2 0 1 0 .1 0M18.5 18.5a2 2 0 1 0 .1 0"/></svg></div><h4>배송기사</h4><ul class="blist"><li>금일 배송 목록 확인</li><li>배송 완료 · 미배송 처리</li></ul></div>
+      <div class="role reveal" style="animation-delay:.16s"><div class="ico"><svg viewBox="0 0 24 24"><path d="M3 9l9-6 9 6v11H3zM3 9h18M9 20v-6h6v6"/></svg></div><h4>물류센터</h4><ul class="blist"><li>재고 · 발주 처리</li><li>입고 · 출고 내역 관리</li></ul></div>
+    </div>
+    <div class="system-action">
+      <a href="#" class="pill pill-pri">로그인하기 →</a>
+      <p>점주, 배송기사, 물류센터 담당자는 로그인 후 각 역할에 맞는 대시보드를 확인할 수 있습니다.</p>
+    </div>
+  </div></section>
+
+  <!-- ESG -->
+  <section class="pg-sec"><div class="wrap">
+    <div class="head reveal"><div class="eyebrow">ESG 경영</div><h2 data-i18n="esg.h">지속가능경영 (ESG)</h2><p data-i18n="esg.p">콜드체인의 에너지·식품 폐기·안전 데이터를 관리해 환경과 사회적 책임을 함께 실현합니다.</p></div>
+    <div class="esg-grid">
+      <div class="esg-card e reveal"><span class="tagk">ENVIRONMENT</span><h4 data-i18n="esg.e">탄소 저감 운송</h4><p data-i18n="esg.ed">배차 최적화와 운영 효율화로 운송 단계 탄소 배출을 줄입니다.</p><span class="big"><span data-count="18" data-suffix="%">18%</span><small data-i18n="esg.es1">배차 최적화 CO₂↓</small></span></div>
+      <div class="esg-card s reveal" style="animation-delay:.08s"><span class="tagk">SOCIAL</span><h4 data-i18n="esg.s">식품 폐기 절감</h4><p data-i18n="esg.sd">유통기한 임박 상품을 선별·재배치해 폐기 손실과 식품 낭비를 낮춥니다.</p><span class="big"><span data-count="27" data-suffix="%">27%</span><small data-i18n="esg.ss1">폐기율 감축 · 연간</small></span></div>
+      <div class="esg-card g reveal" style="animation-delay:.16s"><span class="tagk">GOVERNANCE</span><h4 data-i18n="esg.g">투명한 온도 기록</h4><p data-i18n="esg.gd">전 구간 온도 이력을 회차별 리포트로 보관해 투명하게 공개합니다.</p><span class="big"><span data-count="99.8" data-suffix="%">99.8%</span><small data-i18n="esg.gs1">온도 준수율 · 최근 12개월</small></span></div>
+    </div>
+  </div></section>
+
+  <section class="cta">
+    <div class="cta-box reveal">
+      <h2 data-i18n="cta.h">편의점 콜드체인 물류,<br>CoolRoute와 시작하세요</h2>
+      <p data-i18n="cta.p">센터 권역, 온도대, 배송 회차를 먼저 확인하고 우리 점포망에 맞는 도입 범위를 상담해 보세요.</p>
+      <div class="row"><a href="#" class="pill pill-pri" data-action="consult" data-i18n="cta.b1">도입 상담 요청 →</a><a href="#" class="pill pill-ghost" data-i18n="cta.b2">기존 고객 로그인</a></div>
+    </div>
+  </section>
 </div>
 
-<!-- ===================== 인재채용 ===================== -->
+<!-- ===================== 회사소개 ===================== -->
 </main>
 
 <!-- 플로팅 퀵메뉴 -->
@@ -260,7 +320,7 @@
   </div>
 </div></footer>
 
-<script src="images/kr-map-data.js"></script>
+<script src="../images/kr-map-data.js"></script>
 <script>
   const PAGE_FRAGMENTS=[
     'home','about','business','solution','info','support','recruit'

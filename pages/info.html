@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>고객지원 | CoolRoute</title>
+<title>물류정보 | CoolRoute</title>
 <meta name="description" content="CoolRoute는 편의점 냉장·냉동 상품의 발주·배송·재고를 연결하는 콜드체인 물류 전문기업입니다. 전국 6개 저온 물류센터, 99.8% 온도 준수율, 24시간 온도 관제.">
 <meta name="keywords" content="콜드체인,편의점 물류,냉장 배송,냉동 물류,저온 물류,온도 관제,CoolRoute">
 <meta name="author" content="CoolRoute">
@@ -28,7 +28,7 @@
 <link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='6' fill='%232563eb'/%3E%3Cpath d='M12 2v20M2 12h20M5 5l14 14M19 5L5 19' stroke='white' stroke-width='2' stroke-linecap='round' fill='none'/%3E%3C/svg%3E">
 <!-- PWA manifest (inline) -->
 <link rel="manifest" href="data:application/json,%7B%22name%22%3A%22CoolRoute%22%2C%22short_name%22%3A%22CoolRoute%22%2C%22start_url%22%3A%22.%22%2C%22display%22%3A%22standalone%22%2C%22background_color%22%3A%22%23fbfafe%22%2C%22theme_color%22%3A%22%232563eb%22%7D">
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../styles.css">
 <!-- JSON-LD: Organization -->
 <script type="application/ld+json">
 {
@@ -84,45 +84,74 @@
   <a href="#" class="pill pill-pri" style="justify-content:center;margin-top:6px" data-i18n="nav.login">로그인</a>
 </div>
 
-<main id="app" data-page="support" aria-live="polite">
-<div class="page active" id="page-support">
+<main id="app" data-page="info" aria-live="polite">
+<div class="page active" id="page-info">
   <section class="pagehero"><div class="wrap">
-    <div class="crumb"><a href="#home">홈</a> › <b>고객지원</b></div>
-    <h1>고객지원</h1>
-    <p>공지사항, 자주 묻는 질문, 문의 안내까지 CoolRoute 이용을 돕습니다.</p>
+    <div class="crumb"><a href="#home">홈</a> › <b>물류정보</b></div>
+    <h1>물류정보</h1>
+    <p>콜드체인의 개념과 편의점 물류 흐름, 그리고 상품 품질 관리를 안내합니다.</p>
   </div></section>
   <nav class="subnav"><div class="wrap">
-    <a href="#support">공지사항</a><a href="#faq">자주 묻는 질문</a><a href="#faq">이용안내</a><a href="#contact">문의안내</a>
+    <a href="#info">콜드체인이란?</a><a href="#flow">편의점 물류 흐름</a><a href="#quality">상품 품질 관리</a><a href="#coldpoint">콜드체인 관리 포인트</a><a href="#quality-proof">온도 이탈 대응</a>
   </div></nav>
   <section class="pg-sec"><div class="wrap">
-    <div class="sup-grid">
-      <div class="reveal">
-        <div class="notice glass" style="margin-bottom:22px">
-          <div class="nh"><div class="nt"><span class="b new">공지</span><a href="#">콜드체인 통합 관리 시스템 정기 점검 안내</a></div><span class="dt">2026.06.18</span></div>
-          <div class="nh"><div class="nt"><span class="b">안내</span><a href="#">온도 모니터링 경고 기준 업데이트 안내</a></div><span class="dt">2026.06.10</span></div>
-          <div class="nh"><div class="nt"><span class="b">안내</span><a href="#">배송기사용 시스템 배송 경로 기능 개선</a></div><span class="dt">2026.05.29</span></div>
-          <div class="nh"><div class="nt"><span class="b" style="background:rgba(37,99,235,.1);color:#2563eb">보도</span><a href="#">CoolRoute, 영남 냉동 거점 증설로 처리량 30% 확대</a></div><span class="dt">2026.05.14</span></div>
-          <div class="nh"><div class="nt"><span class="b" style="background:rgba(37,99,235,.1);color:#2563eb">보도</span><a href="#">온도 준수율 99.8% 달성 · 콜드체인 표준 운영 발표</a></div><span class="dt">2026.04.22</span></div>
-          <div class="nh"><div class="nt"><span class="b">안내</span><a href="#">개인정보처리방침 개정 안내 (시행 2026.04.01)</a></div><span class="dt">2026.03.25</span></div>
+    <div class="define glass reveal">
+      <div class="q">?</div>
+      <div><h3>콜드체인이란?</h3><p>생산·보관·배송·판매에 이르는 전 과정에서 상품을 적정 온도로 유지하는 저온 물류 체계입니다. 냉장·냉동 상품은 온도가 곧 품질이기에, 보관·배송·판매 전 과정의 온도 유지가 신선도와 안전의 핵심입니다.</p></div>
+    </div>
+
+    <div class="subhead" id="flow-h"><div class="eyebrow">Flow</div><h3>편의점 물류 흐름</h3></div>
+    <div class="flow reveal" id="flow">
+      <div class="step"><div class="nd"><svg viewBox="0 0 24 24"><path d="M5 7h14l-1 13H6zM9 7V5a3 3 0 0 1 6 0v2"/></svg></div><span class="si">STEP 01</span><h4>점포 발주</h4><p>점주가 상품을 발주합니다.</p></div>
+      <div class="step"><div class="nd"><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg></div><span class="si">STEP 02</span><h4>물류센터 승인</h4><p>센터가 주문을 승인합니다.</p></div>
+      <div class="step"><div class="nd"><svg viewBox="0 0 24 24"><path d="M3 9l9-6 9 6v11H3zM9 20v-6h6v6"/></svg></div><span class="si">STEP 03</span><h4>출고 처리</h4><p>적정 온도로 피킹·출고합니다.</p></div>
+      <div class="step"><div class="nd"><svg viewBox="0 0 24 24"><path d="M1 5h13v11H1zM14 9h4l3 3v4h-7M5 19a2 2 0 1 0 .1 0M17 19a2 2 0 1 0 .1 0"/></svg></div><span class="si">STEP 04</span><h4>배송 진행</h4><p>온도 유지하며 운송합니다.</p></div>
+      <div class="step"><div class="nd"><svg viewBox="0 0 24 24"><path d="M3 9l1-5h16l1 5M5 9v11h14V9M9 13h6"/></svg></div><span class="si">STEP 05</span><h4>점포 입고</h4><p>검수 후 입고를 완료합니다.</p></div>
+      <div class="step"><div class="nd"><svg viewBox="0 0 24 24"><path d="M3 6h18M8 6V4h8v2M19 6l-1 14H6L5 6"/></svg></div><span class="si">STEP 06</span><h4>폐기 관리</h4><p>임박 상품을 폐기 처리합니다.</p></div>
+    </div>
+
+    <div class="subhead"><div class="eyebrow">Quality</div><h3 id="quality">상품 품질 관리</h3></div>
+    <div class="info-grid">
+      <div class="card reveal"><div class="ico"><svg viewBox="0 0 24 24"><path d="M14 14.76V5a2 2 0 1 0-4 0v9.76a4 4 0 1 0 4 0z"/></svg></div><h3>적정 온도 유지</h3><p>전 구간 온도 관리로 냉장·냉동 상품의 신선도와 품질을 유지합니다.</p></div>
+      <div class="card reveal" style="animation-delay:.08s"><div class="ico"><svg viewBox="0 0 24 24"><path d="M3 6h18M8 6V4h8v2M19 6l-1 14H6L5 6M10 11v5M14 11v5"/></svg></div><h3>유통기한·폐기 관리</h3><p>임박 상품을 제때 선별·폐기해 상품 손실을 최소화합니다.</p></div>
+      <div class="card reveal" style="animation-delay:.16s"><div class="ico"><svg viewBox="0 0 24 24"><path d="M12 2l2.4 4.9 5.4.8-3.9 3.8.9 5.4-4.8-2.5-4.8 2.5.9-5.4L4.2 7.7l5.4-.8z"/></svg></div><h3>고객 만족도 향상</h3><p>체계적인 품질 관리로 안전한 상품만 진열해 고객 만족을 높입니다.</p></div>
+    </div>
+  </div></section>
+
+  <!-- 콜드체인 관리 포인트 (홈에서 이동) -->
+  <section class="pg-sec split-section split-cold" id="coldpoint"><div class="wrap">
+    <div class="head head-right reveal"><div class="eyebrow">온도 관리</div><h2>콜드체인 관리 포인트</h2><p>온도와 품질을 실시간으로 관리해 신선함과 안전을 지킵니다.</p></div>
+    <div class="section-photo ov reveal"><img src="../images/coldchain-storage.png" alt="냉장·냉동 구역에 저온 보관된 신선식품 창고 내부"><span class="cap">냉장·냉동 저온 보관</span></div>
+    <div class="points reveal">
+      <div class="pt chill"><div class="ptop"><span class="temp">0~10℃</span><span class="bdg ok">정상</span></div><h4>냉장 상품 관리</h4><p>도시락·유제품 등 단기 신선식품의 신선도를 유지합니다.</p></div>
+      <div class="pt cold"><div class="ptop"><span class="temp">−18℃↓</span><span class="bdg ok">정상</span></div><h4>냉동 상품 관리</h4><p>아이스크림·냉동식품을 초저온으로 품질 보존합니다.</p></div>
+      <div class="pt warn"><div class="ptop"><span class="temp">실시간</span><span class="bdg warn">경고</span></div><h4>온도 이상 확인</h4><p>기준 온도를 벗어나면 경고로 표시해 즉시 확인합니다.</p></div>
+      <div class="pt risk"><div class="ptop"><span class="temp">D-1</span><span class="bdg risk">주의</span></div><h4>폐기 위험 관리</h4><p>유통기한 임박 상품을 선별해 폐기 손실을 최소화합니다.</p></div>
+    </div>
+  </div></section>
+
+  <!-- 온도 이탈 대응 프로토콜 (홈에서 이동) -->
+  <section class="pg-sec assurance split-section split-assurance" id="quality-proof"><div class="wrap">
+    <div class="head head-split reveal"><div><div class="eyebrow">이탈 대응</div><h2>온도 이탈 대응 프로토콜</h2></div><p>센서 알림이 뜬 뒤의 확인, 조치, 기록까지 운영 절차를 명확히 보여줍니다.</p></div>
+    <div class="assurance-grid">
+      <div class="assurance-panel reveal">
+        <h3>품질 관리는 숫자보다 대응 속도가 중요합니다</h3>
+        <p>냉장·냉동 상품은 평균 온도만으로는 충분하지 않습니다. 이탈 구간을 빠르게 확인하고 기사, 센터, 점포가 같은 이력을 보는 구조가 필요합니다.</p>
+        <div class="assurance-tags">
+          <span>온도 로그</span><span>구간 추적</span><span>재배차 판단</span><span>점포 확인</span><span>이력 보관</span>
         </div>
-        <h3 style="color:var(--text);font-size:1.1rem;margin:0 0 14px 2px" id="faq">자주 묻는 질문 · 이용안내</h3>
-        <details class="faq" open><summary>시스템은 어떻게 이용하나요?<span class="pm"></span></summary><div class="a">상단 로그인에서 점주·배송기사·물류센터 중 역할을 선택해 로그인하면, 역할별 대시보드에서 발주·배송·재고·온도 상태를 확인하고 업무를 처리할 수 있습니다.</div></details>
-        <details class="faq"><summary>물류 데이터는 어디서 확인하나요?<span class="pm"></span></summary><div class="a">발주·배송·재고·입출고·폐기 데이터는 로그인 후 통합 관리 시스템 화면에서 실시간으로 확인할 수 있습니다.</div></details>
-        <details class="faq"><summary>온도 관리는 어떻게 표시되나요?<span class="pm"></span></summary><div class="a">냉장·냉동 상품과 창고·차량의 온도는 정상/경고 상태로 표시되며, 기준을 벗어나면 경고로 전환되어 즉시 확인할 수 있습니다.</div></details>
-        <details class="faq"><summary>역할별 화면은 어떻게 이용하나요?<span class="pm"></span></summary><div class="a">점주는 발주·배송·폐기 임박 확인, 배송기사는 배송 목록·완료·미배송 처리, 물류센터는 재고·발주·입출고 관리 화면을 이용합니다.</div></details>
       </div>
-      <div class="contact glass reveal" style="animation-delay:.1s" id="contact">
-        <h3>문의 안내</h3>
-        <div class="ct-row"><div class="ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div><div><div class="k">문의 시간</div><div class="v">평일 09:00 ~ 18:00<small>주말 · 공휴일 휴무</small></div></div></div>
-        <div class="ct-row"><div class="ico"><svg viewBox="0 0 24 24"><path d="M8 6h13M8 12h13M8 18h13M3 6h.01M3 12h.01M3 18h.01"/></svg></div><div><div class="k">문의 유형</div><div class="v">시스템 · 물류 데이터 · 온도 관리<small>역할별 화면 이용 문의 포함</small></div></div></div>
-        <div class="ct-row"><div class="ico"><svg viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 5L2 7"/></svg></div><div><div class="k">이메일</div><div class="v">support@coolroute.co.kr<small>24시간 접수 · 순차 답변</small></div></div></div>
-        <a href="#" class="pill pill-ghost" style="margin-top:20px;width:100%;justify-content:center">문의 메일 보내기</a>
+      <div class="protocol reveal" style="animation-delay:.1s">
+        <div class="protocol-step"><span class="num">01</span><div><h4>센서 알림 감지</h4><p>차량·박스·센터 온도 이탈을 기준값별로 분류하고 위험도를 표시합니다.</p></div><span class="time">즉시</span></div>
+        <div class="protocol-step"><span class="num">02</span><div><h4>기사·센터 동시 확인</h4><p>배송 경로, 도어 개방, 상차 시간, 상품 온도 로그를 함께 대조합니다.</p></div><span class="time">15분</span></div>
+        <div class="protocol-step"><span class="num">03</span><div><h4>재배차 또는 회수 결정</h4><p>품질 위험 상품은 점포 입고 전 별도 처리하고 대체 물량을 배정합니다.</p></div><span class="time">30분</span></div>
+        <div class="protocol-step"><span class="num">04</span><div><h4>리포트 자동 보관</h4><p>이상 구간, 조치 담당자, 점포 확인 결과를 회차별 리포트로 남깁니다.</p></div><span class="time">D+0</span></div>
       </div>
     </div>
   </div></section>
 </div>
 
-<!-- ===================== 인재채용 ===================== -->
+<!-- ===================== 고객지원 ===================== -->
 </main>
 
 <!-- 플로팅 퀵메뉴 -->
@@ -260,7 +289,7 @@
   </div>
 </div></footer>
 
-<script src="images/kr-map-data.js"></script>
+<script src="../images/kr-map-data.js"></script>
 <script>
   const PAGE_FRAGMENTS=[
     'home','about','business','solution','info','support','recruit'
