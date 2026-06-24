@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>사업분야 | CoolRoute</title>
+<title>인재채용 | CoolRoute</title>
 <meta name="description" content="CoolRoute는 편의점 냉장·냉동 상품의 발주·배송·재고를 연결하는 콜드체인 물류 전문기업입니다. 전국 6개 저온 물류센터, 99.8% 온도 준수율, 24시간 온도 관제.">
 <meta name="keywords" content="콜드체인,편의점 물류,냉장 배송,냉동 물류,저온 물류,온도 관제,CoolRoute">
 <meta name="author" content="CoolRoute">
@@ -28,7 +28,7 @@
 <link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='6' fill='%232563eb'/%3E%3Cpath d='M12 2v20M2 12h20M5 5l14 14M19 5L5 19' stroke='white' stroke-width='2' stroke-linecap='round' fill='none'/%3E%3C/svg%3E">
 <!-- PWA manifest (inline) -->
 <link rel="manifest" href="data:application/json,%7B%22name%22%3A%22CoolRoute%22%2C%22short_name%22%3A%22CoolRoute%22%2C%22start_url%22%3A%22.%22%2C%22display%22%3A%22standalone%22%2C%22background_color%22%3A%22%23fbfafe%22%2C%22theme_color%22%3A%22%232563eb%22%7D">
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../styles.css">
 <!-- JSON-LD: Organization -->
 <script type="application/ld+json">
 {
@@ -84,79 +84,46 @@
   <a href="#" class="pill pill-pri" style="justify-content:center;margin-top:6px" data-i18n="nav.login">로그인</a>
 </div>
 
-<main id="app" data-page="business" aria-live="polite">
-<div class="page active" id="page-business">
+<main id="app" data-page="recruit" aria-live="polite">
+<div class="page active" id="page-recruit">
   <section class="pagehero"><div class="wrap">
-    <div class="crumb"><a href="#home">홈</a> › <b>사업분야</b></div>
-    <h1>사업분야</h1>
-    <p>콜드체인 물류, 편의점 물류, 물류 운영 관리 — 사업분야를 선택해 자세히 확인하세요.</p>
+    <div class="crumb"><a href="#home">홈</a> › <b data-i18n="nav.recruit">인재채용</b></div>
+    <h1 data-i18n="rc.h1">인재채용</h1>
+    <p data-i18n="rc.p">콜드체인의 신선함을 끝까지 지키는 사람들. CoolRoute와 함께 성장할 인재를 찾습니다.</p>
   </div></section>
+  <nav class="subnav"><div class="wrap">
+    <a href="#recruit" data-i18n="rc.n1">인재상</a><a href="#rc-jobs" data-i18n="rc.n2">직무 소개</a><a href="#rc-benefit" data-i18n="rc.n3">복지</a><a href="#rc-open" data-i18n="rc.n4">채용 공고</a>
+  </div></nav>
   <section class="pg-sec"><div class="wrap">
-    <div class="tabwrap reveal">
-      <div class="tabs" role="tablist">
-        <button class="tab on" data-tab="cold"><svg viewBox="0 0 24 24"><path d="M14 14.76V5a2 2 0 1 0-4 0v9.76a4 4 0 1 0 4 0z"/></svg>콜드체인 물류</button>
-        <button class="tab" data-tab="cvs"><svg viewBox="0 0 24 24"><path d="M3 9l1-5h16l1 5M5 9v11h14V9M9 13h6"/></svg>편의점 물류</button>
-        <button class="tab" data-tab="ops"><svg viewBox="0 0 24 24"><path d="M3 7l9-4 9 4-9 4z"/><path d="M3 7v10l9 4 9-4V7M12 11v10"/></svg>물류 운영 관리</button>
-      </div>
+    <div class="subhead"><div class="eyebrow">Talent</div><h3 data-i18n="rc.talent">인재상</h3></div>
+    <div class="values">
+      <div class="card reveal"><div class="ico"><svg viewBox="0 0 24 24"><path d="M12 2l8 4v6c0 5-3.5 8-8 10-4.5-2-8-5-8-10V6z"/><path d="M9 12l2 2 4-4"/></svg></div><h3 data-i18n="rc.t1">책임감</h3><p data-i18n="rc.t1d">약속한 온도와 시간을 끝까지 지키는 책임감을 가진 사람.</p></div>
+      <div class="card reveal" style="animation-delay:.08s"><div class="ico"><svg viewBox="0 0 24 24"><path d="M13 2L3 14h7l-1 8 10-12h-7z"/></svg></div><h3 data-i18n="rc.t2">실행력</h3><p data-i18n="rc.t2d">현장의 문제를 빠르게 확인하고 바로 움직이는 실행력.</p></div>
+      <div class="card reveal" style="animation-delay:.16s"><div class="ico"><svg viewBox="0 0 24 24"><path d="M3 3v18h18M7 14l4-4 3 3 5-6"/></svg></div><h3 data-i18n="rc.t3">데이터 사고</h3><p data-i18n="rc.t3d">숫자와 이력으로 판단하고 개선하는 데이터 기반 사고.</p></div>
     </div>
 
-    <div class="tabpanel on" id="biz-cold" data-panel="cold">
-      <div class="pl">
-        <h3>콜드체인 물류</h3>
-        <p class="lead2">냉장·냉동 상품의 온도를 유지하며 보관·출고·배송하는 핵심 서비스입니다.</p>
-        <ul class="blist"><li>냉장·냉동 상품의 온도 유지 물류 서비스</li><li>상품 보관·출고·배송 과정에서 적정 온도 관리</li><li>온도 이상으로 인한 상품 품질 저하 방지</li></ul>
-        <div class="pipe"><span>온도 유지</span><span>실시간 관제</span><span>냉장·냉동 분리</span></div>
-      </div>
-      <div class="side-stack">
-        <div class="section-photo ov reveal"><img src="images/biz-cold-truck.png" alt="적정 온도를 유지하며 고속도로를 주행하는 냉장·냉동 배송 차량"><span class="cap">전 구간 저온 운송</span></div>
-        <div class="console-mini">
-          <div class="mini-h">실시간 온도 상태</div>
-          <div class="cm-row"><span class="k"><svg viewBox="0 0 24 24" fill="none"><path d="M14 14.76V5a2 2 0 1 0-4 0v9.76a4 4 0 1 0 4 0z"/></svg>냉장 창고 · 3.2℃</span><span class="st ok">정상</span></div>
-          <div class="cm-row"><span class="k"><svg viewBox="0 0 24 24" fill="none"><path d="M14 14.76V5a2 2 0 1 0-4 0v9.76a4 4 0 1 0 4 0z"/></svg>냉동 창고 · −19.6℃</span><span class="st ok">정상</span></div>
-          <div class="cm-row"><span class="k"><svg viewBox="0 0 24 24" fill="none"><path d="M1 5h13v11H1zM14 9h4l3 3v4h-7"/></svg>냉장 배송차 · 4.1℃</span><span class="st ok">정상</span></div>
-          <div class="cm-row"><span class="k"><svg viewBox="0 0 24 24" fill="none"><path d="M1 5h13v11H1zM14 9h4l3 3v4h-7"/></svg>냉동 배송차 · −15.2℃</span><span class="st warn">경고</span></div>
-        </div>
-      </div>
+    <div class="subhead" id="rc-jobs"><div class="eyebrow">Jobs</div><h3 data-i18n="rc.jobs">직무 소개</h3></div>
+    <div class="org">
+      <div class="t reveal"><div class="k">FIELD</div><h4 data-i18n="rc.j1">물류 운영</h4><p data-i18n="rc.j1d">저온 출고·배차·회차 운영을 관리합니다.</p></div>
+      <div class="t reveal" style="animation-delay:.06s"><div class="k">DRIVE</div><h4 data-i18n="rc.j2">저온 배송</h4><p data-i18n="rc.j2d">냉장·냉동 차량으로 점포 배송을 수행합니다.</p></div>
+      <div class="t reveal" style="animation-delay:.12s"><div class="k">TECH</div><h4 data-i18n="rc.j3">시스템 개발</h4><p data-i18n="rc.j3d">관제·발주·배송 플랫폼을 개발합니다.</p></div>
+      <div class="t reveal" style="animation-delay:.18s"><div class="k">PLAN</div><h4 data-i18n="rc.j4">물류 기획</h4><p data-i18n="rc.j4d">네트워크 설계와 데이터 분석을 담당합니다.</p></div>
     </div>
 
-    <div class="tabpanel" id="biz-cvs" data-panel="cvs">
-      <div class="pl">
-        <h3>편의점 물류</h3>
-        <p class="lead2">편의점 점포 발주부터 배송까지 물류 흐름을 관리합니다.</p>
-        <ul class="blist"><li>편의점 점포 발주 및 배송 흐름 관리</li><li>물류센터 주문 처리와 점포 입고 과정 관리</li><li>도시락·삼각김밥·우유·아이스크림 등 상품 공급 관리</li></ul>
-        <div class="pipe"><span>점포 발주</span><span>정시 배송</span><span>신선식품</span></div>
-      </div>
-      <div class="side-stack">
-        <div class="section-photo ov reveal"><img src="images/cvs-delivery.png" alt="이른 아침 편의점 앞에서 냉장 배송차의 신선식품을 하차하는 모습"><span class="cap">편의점 정시 배송</span></div>
-        <div class="console-mini">
-          <div class="mini-h">물류 흐름</div>
-          <div class="cm-row"><span class="kk"><span class="numb">01</span>점포 발주 접수</span></div>
-          <div class="cm-row"><span class="kk"><span class="numb">02</span>물류센터 주문 처리</span></div>
-          <div class="cm-row"><span class="kk"><span class="numb">03</span>콜드체인 배송</span></div>
-          <div class="cm-row"><span class="kk"><span class="numb">04</span>점포 입고 완료</span></div>
-        </div>
-      </div>
+    <div class="subhead" id="rc-benefit"><div class="eyebrow">Benefit</div><h3 data-i18n="rc.benefit">복지</h3></div>
+    <div class="info-grid">
+      <div class="card reveal"><div class="ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div><h3 data-i18n="rc.b1">유연 근무</h3><p data-i18n="rc.b1d">직무별 탄력 근무와 교대 보상 체계를 운영합니다.</p></div>
+      <div class="card reveal" style="animation-delay:.08s"><div class="ico"><svg viewBox="0 0 24 24"><path d="M12 2l8 4v6c0 5-3.5 8-8 10-4.5-2-8-5-8-10V6z"/></svg></div><h3 data-i18n="rc.b2">건강·안전</h3><p data-i18n="rc.b2d">정기 건강검진과 현장 안전 장비를 지원합니다.</p></div>
+      <div class="card reveal" style="animation-delay:.16s"><div class="ico"><svg viewBox="0 0 24 24"><path d="M22 10v6M2 10l10-5 10 5-10 5zM6 12v5c3 3 9 3 12 0v-5"/></svg></div><h3 data-i18n="rc.b3">성장 지원</h3><p data-i18n="rc.b3d">자격·교육비와 사내 직무 전환을 지원합니다.</p></div>
     </div>
 
-    <div class="tabpanel" id="biz-ops" data-panel="ops">
-      <div class="pl">
-        <h3>물류 운영 관리</h3>
-        <p class="lead2">재고·배송·폐기 흐름을 하나의 화면에서 통합적으로 관리합니다.</p>
-        <ul class="blist"><li>상품별 현재고와 안전재고 관리</li><li>배송 목록·배송 완료·미배송 상태 관리</li><li>유통기한 임박 상품 및 폐기 대상 상품 관리</li></ul>
-        <div class="pipe"><span>재고 관리</span><span>배송 추적</span><span>폐기 관리</span></div>
-      </div>
-      <div class="console-mini">
-        <div class="mini-h">운영 현황</div>
-        <div class="cm-row"><span class="kk">현재고 품목</span><span class="cm-val">1,284</span></div>
-        <div class="cm-row"><span class="kk">안전재고 미만</span><span class="st warn">3건</span></div>
-        <div class="cm-row"><span class="kk">금일 미배송</span><span class="st warn">2건</span></div>
-        <div class="cm-row"><span class="kk">폐기 임박 (D-1)</span><span class="st risk">5건</span></div>
-      </div>
+    <div class="sol-cta reveal" id="rc-open">
+      <h3 data-i18n="rc.open">지금 채용 중인 포지션을 확인하세요</h3>
+      <p data-i18n="rc.opend">물류 운영, 저온 배송, 시스템 개발, 물류 기획 부문에서 함께할 동료를 찾고 있습니다.</p>
+      <a href="#" class="pill pill-pri" data-action="consult" data-i18n="rc.apply">지원·문의하기 →</a>
     </div>
   </div></section>
 </div>
-
-<!-- ===================== 물류솔루션 ===================== -->
 </main>
 
 <!-- 플로팅 퀵메뉴 -->
@@ -294,7 +261,7 @@
   </div>
 </div></footer>
 
-<script src="images/kr-map-data.js"></script>
+<script src="../images/kr-map-data.js"></script>
 <script>
   const PAGE_FRAGMENTS=[
     'home','about','business','solution','info','support','recruit'
