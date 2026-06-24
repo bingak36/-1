@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>회사소개 | CoolRoute</title>
+<title>인재채용 | CoolRoute</title>
 <meta name="description" content="CoolRoute는 편의점 냉장·냉동 상품의 발주·배송·재고를 연결하는 콜드체인 물류 전문기업입니다. 전국 6개 저온 물류센터, 99.8% 온도 준수율, 24시간 온도 관제.">
 <meta name="keywords" content="콜드체인,편의점 물류,냉장 배송,냉동 물류,저온 물류,온도 관제,CoolRoute">
 <meta name="author" content="CoolRoute">
@@ -28,7 +28,7 @@
 <link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='6' fill='%232563eb'/%3E%3Cpath d='M12 2v20M2 12h20M5 5l14 14M19 5L5 19' stroke='white' stroke-width='2' stroke-linecap='round' fill='none'/%3E%3C/svg%3E">
 <!-- PWA manifest (inline) -->
 <link rel="manifest" href="data:application/json,%7B%22name%22%3A%22CoolRoute%22%2C%22short_name%22%3A%22CoolRoute%22%2C%22start_url%22%3A%22.%22%2C%22display%22%3A%22standalone%22%2C%22background_color%22%3A%22%23fbfafe%22%2C%22theme_color%22%3A%22%232563eb%22%7D">
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../styles.css">
 <!-- JSON-LD: Organization -->
 <script type="application/ld+json">
 {
@@ -84,55 +84,46 @@
   <a href="#" class="pill pill-pri" style="justify-content:center;margin-top:6px" data-i18n="nav.login">로그인</a>
 </div>
 
-<main id="app" data-page="about" aria-live="polite">
-<div class="page active" id="page-about">
+<main id="app" data-page="recruit" aria-live="polite">
+<div class="page active" id="page-recruit">
   <section class="pagehero"><div class="wrap">
-    <div class="crumb"><a href="#home">홈</a> › <b>회사소개</b></div>
-    <h1>회사소개</h1>
-    <p>편의점 콜드체인 물류에 특화된 전문 기업, CoolRoute를 소개합니다. 신뢰·안전·효율을 기준으로 냉장·냉동 상품의 물류 전 과정을 운영합니다.</p>
+    <div class="crumb"><a href="#home">홈</a> › <b data-i18n="nav.recruit">인재채용</b></div>
+    <h1 data-i18n="rc.h1">인재채용</h1>
+    <p data-i18n="rc.p">콜드체인의 신선함을 끝까지 지키는 사람들. CoolRoute와 함께 성장할 인재를 찾습니다.</p>
   </div></section>
   <nav class="subnav"><div class="wrap">
-    <a href="#about">회사개요</a><a href="#values">경영이념</a><a href="#vision">비전</a><a href="#org">조직안내</a>
+    <a href="#recruit" data-i18n="rc.n1">인재상</a><a href="#rc-jobs" data-i18n="rc.n2">직무 소개</a><a href="#rc-benefit" data-i18n="rc.n3">복지</a><a href="#rc-open" data-i18n="rc.n4">채용 공고</a>
   </div></nav>
   <section class="pg-sec"><div class="wrap">
-    <div class="about-grid reveal">
-      <div class="overview glass">
-        <h3>회사개요</h3>
-        <p>편의점 냉장·냉동 상품의 발주부터 보관, 배송, 점포 입고까지 콜드체인 전 구간을 책임지는 물류 전문 기업입니다. 데이터 기반 온도 관리로 신선식품의 품질을 끝까지 지킵니다.</p>
-        <div class="ov-stats">
-          <div class="s"><b>편의점 특화</b><small>콜드체인 물류 전문</small></div>
-          <div class="s"><b>전국 6개</b><small>콜드체인 물류센터</small></div>
-          <div class="s"><b>3,200+ 점포</b><small>저온 배송 네트워크</small></div>
-          <div class="s"><b>24시간</b><small>온도 관제 운영</small></div>
-        </div>
-      </div>
-      <div class="vision" id="vision">
-        <div class="eyebrow">Vision</div>
-        <h3>데이터와 온도 관리 기술로<br>콜드체인 표준을 만드는<br><span class="grad">스마트 콜드체인 물류 기업</span></h3>
-        <p>온도·발주·재고·배송 데이터를 하나로 연결해 더 신선하고 더 효율적인 편의점 물류를 실현합니다.</p>
-      </div>
+    <div class="subhead"><div class="eyebrow">Talent</div><h3 data-i18n="rc.talent">인재상</h3></div>
+    <div class="values">
+      <div class="card reveal"><div class="ico"><svg viewBox="0 0 24 24"><path d="M12 2l8 4v6c0 5-3.5 8-8 10-4.5-2-8-5-8-10V6z"/><path d="M9 12l2 2 4-4"/></svg></div><h3 data-i18n="rc.t1">책임감</h3><p data-i18n="rc.t1d">약속한 온도와 시간을 끝까지 지키는 책임감을 가진 사람.</p></div>
+      <div class="card reveal" style="animation-delay:.08s"><div class="ico"><svg viewBox="0 0 24 24"><path d="M13 2L3 14h7l-1 8 10-12h-7z"/></svg></div><h3 data-i18n="rc.t2">실행력</h3><p data-i18n="rc.t2d">현장의 문제를 빠르게 확인하고 바로 움직이는 실행력.</p></div>
+      <div class="card reveal" style="animation-delay:.16s"><div class="ico"><svg viewBox="0 0 24 24"><path d="M3 3v18h18M7 14l4-4 3 3 5-6"/></svg></div><h3 data-i18n="rc.t3">데이터 사고</h3><p data-i18n="rc.t3d">숫자와 이력으로 판단하고 개선하는 데이터 기반 사고.</p></div>
     </div>
 
-    <div class="section-photo ov reveal" style="margin-top:34px"><img src="images/company-center.png" alt="여러 저온 상하차 도크를 갖춘 CoolRoute 콜드체인 물류센터 외관"><span class="cap">전국 6개 콜드체인 물류센터</span></div>
-
-    <div class="subhead"><div class="eyebrow">Management</div><h3>경영이념</h3></div>
-    <div class="values" id="values">
-      <div class="card reveal"><div class="ico"><svg viewBox="0 0 24 24"><path d="M12 2l8 4v6c0 5-3.5 8-8 10-4.5-2-8-5-8-10V6z"/><path d="M9 12l2 2 4-4"/></svg></div><h3>신뢰</h3><p>정해진 시간, 정해진 온도. 약속한 신선함을 빠짐없이 지켜 점포의 신뢰를 얻습니다.</p></div>
-      <div class="card reveal" style="animation-delay:.08s"><div class="ico"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div><h3>안전</h3><p>전 구간 실시간 온도 관제로 변질을 차단하고, 안전한 먹거리를 매장까지 전달합니다.</p></div>
-      <div class="card reveal" style="animation-delay:.16s"><div class="ico"><svg viewBox="0 0 24 24"><path d="M13 2L3 14h7l-1 8 10-12h-7z"/></svg></div><h3>효율</h3><p>발주·배송·재고·폐기를 하나로 연결해 낭비 없는 콜드체인 운영을 만듭니다.</p></div>
+    <div class="subhead" id="rc-jobs"><div class="eyebrow">Jobs</div><h3 data-i18n="rc.jobs">직무 소개</h3></div>
+    <div class="org">
+      <div class="t reveal"><div class="k">FIELD</div><h4 data-i18n="rc.j1">물류 운영</h4><p data-i18n="rc.j1d">저온 출고·배차·회차 운영을 관리합니다.</p></div>
+      <div class="t reveal" style="animation-delay:.06s"><div class="k">DRIVE</div><h4 data-i18n="rc.j2">저온 배송</h4><p data-i18n="rc.j2d">냉장·냉동 차량으로 점포 배송을 수행합니다.</p></div>
+      <div class="t reveal" style="animation-delay:.12s"><div class="k">TECH</div><h4 data-i18n="rc.j3">시스템 개발</h4><p data-i18n="rc.j3d">관제·발주·배송 플랫폼을 개발합니다.</p></div>
+      <div class="t reveal" style="animation-delay:.18s"><div class="k">PLAN</div><h4 data-i18n="rc.j4">물류 기획</h4><p data-i18n="rc.j4d">네트워크 설계와 데이터 분석을 담당합니다.</p></div>
     </div>
 
-    <div class="subhead"><div class="eyebrow">Organization</div><h3>조직안내</h3></div>
-    <div class="org" id="org">
-      <div class="t reveal"><div class="k">TEAM 01</div><h4>물류운영팀</h4><p>콜드체인 전 과정의 운영과 표준을 총괄합니다.</p></div>
-      <div class="t reveal" style="animation-delay:.06s"><div class="k">TEAM 02</div><h4>배송관리팀</h4><p>저온 배송 일정과 배송 상태를 관리합니다.</p></div>
-      <div class="t reveal" style="animation-delay:.12s"><div class="k">TEAM 03</div><h4>재고관리팀</h4><p>현재고·안전재고와 입출고를 관리합니다.</p></div>
-      <div class="t reveal" style="animation-delay:.18s"><div class="k">TEAM 04</div><h4>고객지원팀</h4><p>점주·기사·센터의 문의를 지원합니다.</p></div>
+    <div class="subhead" id="rc-benefit"><div class="eyebrow">Benefit</div><h3 data-i18n="rc.benefit">복지</h3></div>
+    <div class="info-grid">
+      <div class="card reveal"><div class="ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div><h3 data-i18n="rc.b1">유연 근무</h3><p data-i18n="rc.b1d">직무별 탄력 근무와 교대 보상 체계를 운영합니다.</p></div>
+      <div class="card reveal" style="animation-delay:.08s"><div class="ico"><svg viewBox="0 0 24 24"><path d="M12 2l8 4v6c0 5-3.5 8-8 10-4.5-2-8-5-8-10V6z"/></svg></div><h3 data-i18n="rc.b2">건강·안전</h3><p data-i18n="rc.b2d">정기 건강검진과 현장 안전 장비를 지원합니다.</p></div>
+      <div class="card reveal" style="animation-delay:.16s"><div class="ico"><svg viewBox="0 0 24 24"><path d="M22 10v6M2 10l10-5 10 5-10 5zM6 12v5c3 3 9 3 12 0v-5"/></svg></div><h3 data-i18n="rc.b3">성장 지원</h3><p data-i18n="rc.b3d">자격·교육비와 사내 직무 전환을 지원합니다.</p></div>
+    </div>
+
+    <div class="sol-cta reveal" id="rc-open">
+      <h3 data-i18n="rc.open">지금 채용 중인 포지션을 확인하세요</h3>
+      <p data-i18n="rc.opend">물류 운영, 저온 배송, 시스템 개발, 물류 기획 부문에서 함께할 동료를 찾고 있습니다.</p>
+      <a href="#" class="pill pill-pri" data-action="consult" data-i18n="rc.apply">지원·문의하기 →</a>
     </div>
   </div></section>
 </div>
-
-<!-- ===================== 사업분야 ===================== -->
 </main>
 
 <!-- 플로팅 퀵메뉴 -->
@@ -270,7 +261,7 @@
   </div>
 </div></footer>
 
-<script src="images/kr-map-data.js"></script>
+<script src="../images/kr-map-data.js"></script>
 <script>
   const PAGE_FRAGMENTS=[
     'home','about','business','solution','info','support','recruit'

@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>회사소개 | CoolRoute</title>
+<title>고객지원 | CoolRoute</title>
 <meta name="description" content="CoolRoute는 편의점 냉장·냉동 상품의 발주·배송·재고를 연결하는 콜드체인 물류 전문기업입니다. 전국 6개 저온 물류센터, 99.8% 온도 준수율, 24시간 온도 관제.">
 <meta name="keywords" content="콜드체인,편의점 물류,냉장 배송,냉동 물류,저온 물류,온도 관제,CoolRoute">
 <meta name="author" content="CoolRoute">
@@ -28,7 +28,7 @@
 <link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='6' fill='%232563eb'/%3E%3Cpath d='M12 2v20M2 12h20M5 5l14 14M19 5L5 19' stroke='white' stroke-width='2' stroke-linecap='round' fill='none'/%3E%3C/svg%3E">
 <!-- PWA manifest (inline) -->
 <link rel="manifest" href="data:application/json,%7B%22name%22%3A%22CoolRoute%22%2C%22short_name%22%3A%22CoolRoute%22%2C%22start_url%22%3A%22.%22%2C%22display%22%3A%22standalone%22%2C%22background_color%22%3A%22%23fbfafe%22%2C%22theme_color%22%3A%22%232563eb%22%7D">
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../styles.css">
 <!-- JSON-LD: Organization -->
 <script type="application/ld+json">
 {
@@ -84,55 +84,45 @@
   <a href="#" class="pill pill-pri" style="justify-content:center;margin-top:6px" data-i18n="nav.login">로그인</a>
 </div>
 
-<main id="app" data-page="about" aria-live="polite">
-<div class="page active" id="page-about">
+<main id="app" data-page="support" aria-live="polite">
+<div class="page active" id="page-support">
   <section class="pagehero"><div class="wrap">
-    <div class="crumb"><a href="#home">홈</a> › <b>회사소개</b></div>
-    <h1>회사소개</h1>
-    <p>편의점 콜드체인 물류에 특화된 전문 기업, CoolRoute를 소개합니다. 신뢰·안전·효율을 기준으로 냉장·냉동 상품의 물류 전 과정을 운영합니다.</p>
+    <div class="crumb"><a href="#home">홈</a> › <b>고객지원</b></div>
+    <h1>고객지원</h1>
+    <p>공지사항, 자주 묻는 질문, 문의 안내까지 CoolRoute 이용을 돕습니다.</p>
   </div></section>
   <nav class="subnav"><div class="wrap">
-    <a href="#about">회사개요</a><a href="#values">경영이념</a><a href="#vision">비전</a><a href="#org">조직안내</a>
+    <a href="#support">공지사항</a><a href="#faq">자주 묻는 질문</a><a href="#faq">이용안내</a><a href="#contact">문의안내</a>
   </div></nav>
   <section class="pg-sec"><div class="wrap">
-    <div class="about-grid reveal">
-      <div class="overview glass">
-        <h3>회사개요</h3>
-        <p>편의점 냉장·냉동 상품의 발주부터 보관, 배송, 점포 입고까지 콜드체인 전 구간을 책임지는 물류 전문 기업입니다. 데이터 기반 온도 관리로 신선식품의 품질을 끝까지 지킵니다.</p>
-        <div class="ov-stats">
-          <div class="s"><b>편의점 특화</b><small>콜드체인 물류 전문</small></div>
-          <div class="s"><b>전국 6개</b><small>콜드체인 물류센터</small></div>
-          <div class="s"><b>3,200+ 점포</b><small>저온 배송 네트워크</small></div>
-          <div class="s"><b>24시간</b><small>온도 관제 운영</small></div>
+    <div class="sup-grid">
+      <div class="reveal">
+        <div class="notice glass" style="margin-bottom:22px">
+          <div class="nh"><div class="nt"><span class="b new">공지</span><a href="#">콜드체인 통합 관리 시스템 정기 점검 안내</a></div><span class="dt">2026.06.18</span></div>
+          <div class="nh"><div class="nt"><span class="b">안내</span><a href="#">온도 모니터링 경고 기준 업데이트 안내</a></div><span class="dt">2026.06.10</span></div>
+          <div class="nh"><div class="nt"><span class="b">안내</span><a href="#">배송기사용 시스템 배송 경로 기능 개선</a></div><span class="dt">2026.05.29</span></div>
+          <div class="nh"><div class="nt"><span class="b" style="background:rgba(37,99,235,.1);color:#2563eb">보도</span><a href="#">CoolRoute, 영남 냉동 거점 증설로 처리량 30% 확대</a></div><span class="dt">2026.05.14</span></div>
+          <div class="nh"><div class="nt"><span class="b" style="background:rgba(37,99,235,.1);color:#2563eb">보도</span><a href="#">온도 준수율 99.8% 달성 · 콜드체인 표준 운영 발표</a></div><span class="dt">2026.04.22</span></div>
+          <div class="nh"><div class="nt"><span class="b">안내</span><a href="#">개인정보처리방침 개정 안내 (시행 2026.04.01)</a></div><span class="dt">2026.03.25</span></div>
         </div>
+        <h3 style="color:var(--text);font-size:1.1rem;margin:0 0 14px 2px" id="faq">자주 묻는 질문 · 이용안내</h3>
+        <details class="faq" open><summary>시스템은 어떻게 이용하나요?<span class="pm"></span></summary><div class="a">상단 로그인에서 점주·배송기사·물류센터 중 역할을 선택해 로그인하면, 역할별 대시보드에서 발주·배송·재고·온도 상태를 확인하고 업무를 처리할 수 있습니다.</div></details>
+        <details class="faq"><summary>물류 데이터는 어디서 확인하나요?<span class="pm"></span></summary><div class="a">발주·배송·재고·입출고·폐기 데이터는 로그인 후 통합 관리 시스템 화면에서 실시간으로 확인할 수 있습니다.</div></details>
+        <details class="faq"><summary>온도 관리는 어떻게 표시되나요?<span class="pm"></span></summary><div class="a">냉장·냉동 상품과 창고·차량의 온도는 정상/경고 상태로 표시되며, 기준을 벗어나면 경고로 전환되어 즉시 확인할 수 있습니다.</div></details>
+        <details class="faq"><summary>역할별 화면은 어떻게 이용하나요?<span class="pm"></span></summary><div class="a">점주는 발주·배송·폐기 임박 확인, 배송기사는 배송 목록·완료·미배송 처리, 물류센터는 재고·발주·입출고 관리 화면을 이용합니다.</div></details>
       </div>
-      <div class="vision" id="vision">
-        <div class="eyebrow">Vision</div>
-        <h3>데이터와 온도 관리 기술로<br>콜드체인 표준을 만드는<br><span class="grad">스마트 콜드체인 물류 기업</span></h3>
-        <p>온도·발주·재고·배송 데이터를 하나로 연결해 더 신선하고 더 효율적인 편의점 물류를 실현합니다.</p>
+      <div class="contact glass reveal" style="animation-delay:.1s" id="contact">
+        <h3>문의 안내</h3>
+        <div class="ct-row"><div class="ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div><div><div class="k">문의 시간</div><div class="v">평일 09:00 ~ 18:00<small>주말 · 공휴일 휴무</small></div></div></div>
+        <div class="ct-row"><div class="ico"><svg viewBox="0 0 24 24"><path d="M8 6h13M8 12h13M8 18h13M3 6h.01M3 12h.01M3 18h.01"/></svg></div><div><div class="k">문의 유형</div><div class="v">시스템 · 물류 데이터 · 온도 관리<small>역할별 화면 이용 문의 포함</small></div></div></div>
+        <div class="ct-row"><div class="ico"><svg viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 5L2 7"/></svg></div><div><div class="k">이메일</div><div class="v">support@coolroute.co.kr<small>24시간 접수 · 순차 답변</small></div></div></div>
+        <a href="#" class="pill pill-ghost" style="margin-top:20px;width:100%;justify-content:center">문의 메일 보내기</a>
       </div>
-    </div>
-
-    <div class="section-photo ov reveal" style="margin-top:34px"><img src="images/company-center.png" alt="여러 저온 상하차 도크를 갖춘 CoolRoute 콜드체인 물류센터 외관"><span class="cap">전국 6개 콜드체인 물류센터</span></div>
-
-    <div class="subhead"><div class="eyebrow">Management</div><h3>경영이념</h3></div>
-    <div class="values" id="values">
-      <div class="card reveal"><div class="ico"><svg viewBox="0 0 24 24"><path d="M12 2l8 4v6c0 5-3.5 8-8 10-4.5-2-8-5-8-10V6z"/><path d="M9 12l2 2 4-4"/></svg></div><h3>신뢰</h3><p>정해진 시간, 정해진 온도. 약속한 신선함을 빠짐없이 지켜 점포의 신뢰를 얻습니다.</p></div>
-      <div class="card reveal" style="animation-delay:.08s"><div class="ico"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div><h3>안전</h3><p>전 구간 실시간 온도 관제로 변질을 차단하고, 안전한 먹거리를 매장까지 전달합니다.</p></div>
-      <div class="card reveal" style="animation-delay:.16s"><div class="ico"><svg viewBox="0 0 24 24"><path d="M13 2L3 14h7l-1 8 10-12h-7z"/></svg></div><h3>효율</h3><p>발주·배송·재고·폐기를 하나로 연결해 낭비 없는 콜드체인 운영을 만듭니다.</p></div>
-    </div>
-
-    <div class="subhead"><div class="eyebrow">Organization</div><h3>조직안내</h3></div>
-    <div class="org" id="org">
-      <div class="t reveal"><div class="k">TEAM 01</div><h4>물류운영팀</h4><p>콜드체인 전 과정의 운영과 표준을 총괄합니다.</p></div>
-      <div class="t reveal" style="animation-delay:.06s"><div class="k">TEAM 02</div><h4>배송관리팀</h4><p>저온 배송 일정과 배송 상태를 관리합니다.</p></div>
-      <div class="t reveal" style="animation-delay:.12s"><div class="k">TEAM 03</div><h4>재고관리팀</h4><p>현재고·안전재고와 입출고를 관리합니다.</p></div>
-      <div class="t reveal" style="animation-delay:.18s"><div class="k">TEAM 04</div><h4>고객지원팀</h4><p>점주·기사·센터의 문의를 지원합니다.</p></div>
     </div>
   </div></section>
 </div>
 
-<!-- ===================== 사업분야 ===================== -->
+<!-- ===================== 인재채용 ===================== -->
 </main>
 
 <!-- 플로팅 퀵메뉴 -->
@@ -270,7 +260,7 @@
   </div>
 </div></footer>
 
-<script src="images/kr-map-data.js"></script>
+<script src="../images/kr-map-data.js"></script>
 <script>
   const PAGE_FRAGMENTS=[
     'home','about','business','solution','info','support','recruit'
