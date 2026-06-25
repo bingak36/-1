@@ -1,0 +1,118 @@
+{
+  "styles": {
+    "colors": [],
+    "textStyles": [
+      {
+        "name": "hero-title",
+        "token": "hero-title",
+        "type": "text",
+        "fontFamily": "Inter",
+        "fontWeight": "400",
+        "fontSize": "60px",
+        "lineHeight": "69.19999694824219px",
+        "letterSpacing": "-1.7999999523162842px"
+      },
+      {
+        "name": "section-subtitle",
+        "token": "section-subtitle",
+        "type": "text",
+        "fontFamily": "Inter",
+        "fontWeight": "400",
+        "fontSize": "18px",
+        "lineHeight": "32.099998474121094px",
+        "letterSpacing": "0%"
+      },
+      {
+        "name": "badge-txt",
+        "token": "badge-txt",
+        "type": "text",
+        "fontFamily": "Inter",
+        "fontWeight": "400",
+        "fontSize": "12px",
+        "lineHeight": "21.760000228881836px",
+        "letterSpacing": "0%"
+      },
+      {
+        "name": "section-title",
+        "token": "section-title",
+        "type": "text",
+        "fontFamily": "JetBrains Mono",
+        "fontWeight": "400",
+        "fontSize": "52px",
+        "lineHeight": "69.19999694824219px",
+        "letterSpacing": "-6px"
+      },
+      {
+        "name": "nav-txt",
+        "token": "nav-txt",
+        "type": "text",
+        "fontFamily": "Inter",
+        "fontWeight": "400",
+        "fontSize": "15.199999809265137px",
+        "lineHeight": "25.84000015258789px",
+        "letterSpacing": "0%"
+      },
+      {
+        "name": "section-md-txt",
+        "token": "section-md-txt",
+        "type": "text",
+        "fontFamily": "Inter",
+        "fontWeight": "500",
+        "fontSize": "16px",
+        "lineHeight": "25.84000015258789px",
+        "letterSpacing": "0%"
+      },
+      {
+        "name": "section-sm-txt",
+        "token": "section-sm-txt",
+        "type": "text",
+        "fontFamily": "Inter",
+        "fontWeight": "400",
+        "fontSize": "13px",
+        "lineHeight": "21.760000228881836px",
+        "letterSpacing": "0%"
+      },
+      {
+        "name": "section-lg-txt",
+        "token": "section-lg-txt",
+        "type": "text",
+        "fontFamily": "JetBrains Mono",
+        "fontWeight": "700",
+        "fontSize": "22px",
+        "lineHeight": "36.45000076293945px",
+        "letterSpacing": "-0.4000000059604645px"
+      },
+      {
+        "name": "bold-txt",
+        "token": "bold-txt",
+        "type": "text",
+        "fontFamily": "Inter",
+        "fontWeight": "700",
+        "fontSize": "16.799999237060547px",
+        "lineHeight": "26.65999984741211px",
+        "letterSpacing": "0%"
+      },
+      {
+        "name": "btn-txt",
+        "token": "btn-txt",
+        "type": "text",
+        "fontFamily": "Inter",
+        "fontWeight": "400",
+        "fontSize": "14px",
+        "lineHeight": "25.56999969482422px",
+        "letterSpacing": "0%"
+      }
+    ],
+    "effectStyles": [],
+    "gridStyles": []
+  },
+  "collections": {},
+  "metadata": {
+    "exportDate": "2026-06-24T03:30:35.733Z",
+    "figmaFileKey": "unknown",
+    "fileName": "제목 없음",
+    "pluginVersion": "1.0.0",
+    "collectionsFound": 0,
+    "collectionsExported": 0
+  }
+}
