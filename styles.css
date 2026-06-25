@@ -3,14 +3,6 @@
   @font-face{font-family:'JetBrains Mono';font-weight:500;font-style:normal;font-display:swap;src:url('fonts/JetBrainsMono-Medium.woff2') format('woff2')}
   @font-face{font-family:'JetBrains Mono';font-weight:700;font-style:normal;font-display:swap;src:url('fonts/JetBrainsMono-Bold.woff2') format('woff2')}
   @font-face{font-family:'JetBrains Mono';font-weight:800;font-style:normal;font-display:swap;src:url('fonts/JetBrainsMono-ExtraBold.woff2') format('woff2')}
-<<<<<<< HEAD
-=======
-
-  @font-face{font-family:'Pretendard';font-weight:45 920;font-style:normal;font-display:swap;src:url('fonts/PretendardVariable.woff2') format('woff2-variations')}
-  @font-face{font-family:'JetBrains Mono';font-weight:500;font-style:normal;font-display:swap;src:url('fonts/JetBrainsMono-Medium.woff2') format('woff2')}
-  @font-face{font-family:'JetBrains Mono';font-weight:700;font-style:normal;font-display:swap;src:url('fonts/JetBrainsMono-Bold.woff2') format('woff2')}
-  @font-face{font-family:'JetBrains Mono';font-weight:800;font-style:normal;font-display:swap;src:url('fonts/JetBrainsMono-ExtraBold.woff2') format('woff2')}
->>>>>>> edf6e250d880b73dd5f4a06c5c2cb22d84b35cf8
   :root{
     --bg:#fcfdff;--bg2:#eef2f6;
     --text:#11172a;--soft:#33384a;--muted:#5f6678;--dim:#6b7280;
@@ -137,7 +129,6 @@
   .page{display:none}
   .page.active{display:block;animation:pagein .5s cubic-bezier(.2,.7,.2,1) both}
   @keyframes pagein{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
-<<<<<<< HEAD
   .pagehero{padding:66px 0 50px;background:linear-gradient(160deg,#0b1d34,#15274a);border-bottom:1px solid var(--stroke);position:relative;overflow:hidden}
   .pagehero:before{content:"";position:absolute;inset:0;background-image:var(--hero-img);background-size:cover;background-position:center;filter:blur(3px) brightness(.55);transform:scale(1.08);pointer-events:none}
   .pagehero:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(8,18,38,.42),rgba(8,18,38,.72));pointer-events:none}
@@ -156,23 +147,6 @@
   .pg-sec{padding:70px 0;scroll-margin-top:140px}
   .pg-sec.alt{background:linear-gradient(180deg,#faf8ff,#f6f8fd);border-top:1px solid var(--stroke);border-bottom:1px solid var(--stroke)}
   #values,#vision,#org,#roles,#monitor,#flow,#quality,#faq,#contact,#integrated,#coldchain,.tabpanel,.subhead[id],.overview[id]{scroll-margin-top:140px}
-=======
-  .pagehero{padding:60px 0 44px;background:linear-gradient(180deg,#f1edfd,#f7f8fd);border-bottom:1px solid var(--stroke);position:relative;overflow:hidden}
-  .pagehero:before{content:"";position:absolute;width:520px;height:520px;border-radius:50%;background:radial-gradient(circle,rgba(37,99,235,.13),transparent 62%);top:-280px;right:-60px;pointer-events:none}
-  .pagehero .wrap{position:relative}
-  .crumb{font-family:var(--mono);font-size:.74rem;color:var(--dim);letter-spacing:.4px;margin-bottom:14px;display:flex;align-items:center;gap:8px}
-  .crumb a:hover{color:var(--purple-d)}.crumb b{color:var(--purple-d);font-weight:700}
-  .pagehero h1{font-size:clamp(2rem,4.6vw,2.9rem);font-weight:800;letter-spacing:-1.4px;color:var(--text);line-height:1.12}
-  .pagehero p{color:var(--muted);font-size:1.04rem;margin-top:14px;max-width:640px}
-  .subnav{position:sticky;top:73px;z-index:40;background:rgba(251,250,254,.92);backdrop-filter:blur(14px);border-bottom:1px solid var(--stroke)}
-  .subnav .wrap{display:flex;gap:4px;overflow-x:auto;padding-top:11px;padding-bottom:11px}
-  .subnav a{white-space:nowrap;padding:9px 16px;border-radius:999px;font-size:.9rem;font-weight:600;color:var(--muted);transition:.15s;cursor:pointer}
-  .subnav a:hover{background:#f1edfb;color:var(--text)}
-  .subnav a.on{background:var(--grad);color:#fff}
-  .pg-sec{padding:70px 0;scroll-margin-top:140px}
-  .pg-sec.alt{background:linear-gradient(180deg,#faf8ff,#f6f8fd);border-top:1px solid var(--stroke);border-bottom:1px solid var(--stroke)}
-  #values,#vision,#org,#roles,#monitor,#flow,#quality,#faq,#contact,.tabpanel{scroll-margin-top:140px}
->>>>>>> edf6e250d880b73dd5f4a06c5c2cb22d84b35cf8
   /* ===== HERO ===== */
   .hero{padding:74px 0 60px}
   .hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:54px;align-items:center}
@@ -385,13 +359,10 @@
   details.faq .a{padding:0 20px 18px;color:var(--muted);font-size:.92rem}
   .contact{padding:26px}
   .contact h3{color:var(--text);font-size:1.15rem;font-weight:700;margin-bottom:18px}
-<<<<<<< HEAD
   .faq-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;align-items:start;margin-top:26px}
   .faq-grid details.faq{margin:0}
   .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:start;margin-top:26px}
   @media(max-width:760px){.faq-grid,.contact-grid{grid-template-columns:1fr}}
-=======
->>>>>>> edf6e250d880b73dd5f4a06c5c2cb22d84b35cf8
   .ct-row{display:flex;gap:13px;align-items:flex-start;padding:14px 0;border-bottom:1px solid var(--stroke)}
   .ct-row:last-child{border:none}
   .ct-row .ico{width:40px;height:40px;margin:0;border-radius:11px;flex-shrink:0}
@@ -633,11 +604,7 @@
      radial-gradient(820px 820px at 50% 122%,rgba(37,99,235,.1),transparent 60%),var(--bg)}
   [data-theme="dark"] header{background:rgba(11,16,32,.82)}
   [data-theme="dark"] .subnav{background:rgba(11,16,32,.9)}
-<<<<<<< HEAD
   [data-theme="dark"] .op-action,[data-theme="dark"] .chip,[data-theme="dark"] .tabs,[data-theme="dark"] .subnav .wrap,
-=======
-  [data-theme="dark"] .op-action,[data-theme="dark"] .chip,[data-theme="dark"] .tabs,
->>>>>>> edf6e250d880b73dd5f4a06c5c2cb22d84b35cf8
   [data-theme="dark"] .protocol-step,[data-theme="dark"] .assurance-panel,[data-theme="dark"] .console-mini,
   [data-theme="dark"] .sub,[data-theme="dark"] .mobile,[data-theme="dark"] .marq,[data-theme="dark"] .vision,
   [data-theme="dark"] .sol-cta,[data-theme="dark"] .pill-ghost,[data-theme="dark"] .proof-section,
@@ -776,7 +743,6 @@
   #page-home.active{display:block!important;animation:none!important}
   .reveal{opacity:1!important;transform:none!important;animation:none!important}
   .is-active{opacity:1!important}
-<<<<<<< HEAD
 
   /* ===== 운영 근거 섹션 — 모던 리파인 (틀 유지, 시각만) ===== */
   .proof-section .proof-layout{gap:22px;align-items:stretch}
@@ -1095,5 +1061,3 @@
       line-height:28px;
     }
   }
-=======
->>>>>>> edf6e250d880b73dd5f4a06c5c2cb22d84b35cf8
