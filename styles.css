@@ -147,6 +147,9 @@
   .pg-sec{padding:70px 0;scroll-margin-top:140px}
   .pg-sec.alt{background:linear-gradient(180deg,#faf8ff,#f6f8fd);border-top:1px solid var(--stroke);border-bottom:1px solid var(--stroke)}
   #values,#vision,#org,#roles,#monitor,#flow,#quality,#faq,#contact,#integrated,#coldchain,.tabpanel,.subhead[id],.overview[id]{scroll-margin-top:140px}
+  /* 솔루션 페이지 섹션 간격 축소 */
+  #page-solution .pg-sec{padding:38px 0}
+  #page-solution .subhead{margin:22px 0 20px}
   /* ===== HERO ===== */
   .hero{padding:74px 0 60px}
   .hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:54px;align-items:center}
@@ -1061,3 +1064,23 @@
       line-height:28px;
     }
   }
+
+  /* ===== 역할별 관리 — 카드 복원 + 강화 (에디토리얼 플래튼 오버라이드 / 솔루션 전용) ===== */
+  #page-solution .roles{gap:20px!important;border:none!important;margin-top:10px}
+  #page-solution .roles>.role{
+    display:flex!important;flex-direction:column;
+    position:relative;overflow:hidden;
+    padding:30px 26px!important;margin:0!important;
+    background:var(--panel)!important;border:1px solid var(--stroke)!important;
+    border-radius:18px!important;box-shadow:var(--shadow-sm)!important;
+    transition:transform .22s,box-shadow .22s,border-color .22s!important;
+  }
+  #page-solution .roles>.role:before{content:"";position:absolute;inset:0 0 auto 0;height:3px;background:var(--grad);opacity:0;transition:opacity .22s}
+  #page-solution .roles>.role:hover{transform:translateY(-6px)!important;border-color:var(--stroke2)!important;box-shadow:var(--shadow)!important;background:var(--panel)!important}
+  #page-solution .roles>.role:hover:before{opacity:1}
+  #page-solution .role .ico{width:52px;height:52px;border-radius:15px;margin-bottom:18px}
+  #page-solution .role h4{font-size:1.18rem;margin-bottom:6px}
+  #page-solution .role .blist{flex:1 0 auto;margin:8px 0 22px}
+  #page-solution .role .blist li{font-size:.92rem;margin-bottom:10px}
+  #page-solution .role a{margin-top:auto;justify-content:center;padding:12px 16px;border-radius:12px;border:1px solid var(--stroke2);background:#fff;color:var(--blue);transition:background .18s,color .18s,border-color .18s,box-shadow .18s}
+  #page-solution .role a:hover{background:var(--grad);border-color:transparent;color:#fff;box-shadow:0 10px 24px rgba(37,99,235,.28)}
