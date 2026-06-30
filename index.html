@@ -348,44 +348,55 @@
     <a href="#integrated"><svg viewBox="0 0 24 24"><path d="M3 3h7v7H3zM14 3h7v7h-7zM14 14h7v7h-7zM3 14h7v7H3z"/></svg>통합 관리 시스템</a><a href="#monitor"><svg viewBox="0 0 24 24"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>온도 모니터링</a><a href="#roles"><svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2M9 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>역할별 관리 시스템</a>
   </div></nav>
   <!-- 통합 관리 시스템 -->
-  <section class="pg-sec"><div class="wrap">
-    <div class="subhead" id="integrated"><div class="eyebrow">Integrated System</div><h3>통합 관리 시스템</h3></div>
-    <div class="sol-feature glass reveal">
-      <div>
-        <p>흩어져 있던 편의점 물류 데이터를 하나의 시스템으로 모았습니다. 발주·배송·재고·입출고·폐기 상태를 한 화면에서 확인하고, 편의점 물류 흐름을 통합적으로 관리할 수 있습니다.</p>
+  <section class="pg-sec" id="integrated"><div class="wrap">
+    <div class="sol-feature reveal">
+      <div class="console-mini sol-card">
+        <ul class="blist">
+          <li>흩어진 데이터를 한 화면으로 통합</li>
+          <li>역할별 권한에 맞는 정보만 노출</li>
+          <li>모든 처리 이력을 회차 단위로 기록</li>
+          <li>발주부터 폐기까지 끊김 없는 흐름 관리</li>
+        </ul>
         <div class="pipe"><span>발주</span><span>배송</span><span>재고</span><span>입출고</span><span>폐기</span></div>
       </div>
-      <ul class="blist">
-        <li>흩어진 데이터를 한 화면으로 통합</li>
-        <li>역할별 권한에 맞는 정보만 노출</li>
-        <li>모든 처리 이력을 회차 단위로 기록</li>
-        <li>발주부터 폐기까지 끊김 없는 흐름 관리</li>
-      </ul>
+      <div>
+        <div class="eyebrow green">Integrated System</div>
+        <h3>통합 관리 시스템</h3>
+        <p>흩어져 있던 편의점 물류 데이터를 하나의 시스템으로 모았습니다. 발주·배송·재고·입출고·폐기 상태를 한 화면에서 확인하고, 편의점 물류 흐름을 통합적으로 관리할 수 있습니다.</p>
+      </div>
     </div>
   </div></section>
 
   <!-- 온도 모니터링 -->
   <section class="pg-sec alt"><div class="wrap">
-    <div class="subhead" id="monitor"><div class="eyebrow">Monitoring</div><h3>온도 모니터링</h3></div>
-    <div class="sol-feature glass reveal">
-      <div>
+    <div class="monitor-split reveal" id="monitor">
+      <div class="monitor-copy">
+        <div class="eyebrow green">Monitoring</div>
+        <h3>온도 모니터링</h3>
         <p>전 구간 온도와 안전재고를 한 화면에서 봅니다. 기준을 벗어나면 즉시 경고로 전환되어, 누가 보더라도 같은 상태를 같은 기준으로 판단할 수 있습니다.</p>
-        <div class="console-mini" style="margin-top:18px">
+        <div class="monitor-kpis">
+          <div><b>24h</b><span>관제 운영</span></div>
+          <div><b>±1℃</b><span>경고 기준</span></div>
+          <div><b>D+0</b><span>이력 기록</span></div>
+        </div>
+        <div class="section-photo ov monitor-photo"><img src="images/frozen-warehouse-work.png" alt="냉동 창고에서 작업자가 저온 상품을 점검하며 온도를 관리하는 모습"><span class="cap">냉동 구간 현장 온도 관리</span></div>
+      </div>
+      <div class="monitor-board">
+        <div class="console-mini sol-card monitor-card monitor-card--live">
+          <div class="mini-h">실시간 온도 상태</div>
+          <div class="cm-row"><span class="k"><svg viewBox="0 0 24 24" fill="none"><path d="M14 14.76V5a2 2 0 1 0-4 0v9.76a4 4 0 1 0 4 0z"/></svg>냉장 창고 · 3.2℃</span><span class="st ok">정상</span></div>
+          <div class="cm-row"><span class="k"><svg viewBox="0 0 24 24" fill="none"><path d="M14 14.76V5a2 2 0 1 0-4 0v9.76a4 4 0 1 0 4 0z"/></svg>냉동 창고 · −19.6℃</span><span class="st ok">정상</span></div>
+          <div class="cm-row"><span class="k"><svg viewBox="0 0 24 24" fill="none"><path d="M14 14.76V5a2 2 0 1 0-4 0v9.76a4 4 0 1 0 4 0z"/></svg>냉동 3호차 · −15.2℃</span><span class="st warn">경고</span></div>
+          <div class="cm-row"><span class="k"><svg viewBox="0 0 24 24" fill="none"><path d="M3 7l9-4 9 4-9 4z"/></svg>안전재고 미만 품목</span><span class="st warn">3건</span></div>
+        </div>
+        <div class="console-mini sol-card monitor-card">
           <div class="mini-h">경고 기준 · 대응 단계</div>
           <div class="cm-row"><span class="kk">기준 범위 유지 · 모니터링만 진행</span><span class="st ok">정상</span></div>
           <div class="cm-row"><span class="kk">기준 ±1℃ 이탈 · 담당자 확인 요청</span><span class="st warn">경고</span></div>
           <div class="cm-row"><span class="kk">이탈 지속 · 재배차 또는 회수 판단</span><span class="st risk">위험</span></div>
         </div>
       </div>
-      <div class="console-mini">
-        <div class="mini-h">실시간 온도 상태</div>
-        <div class="cm-row"><span class="k"><svg viewBox="0 0 24 24" fill="none"><path d="M14 14.76V5a2 2 0 1 0-4 0v9.76a4 4 0 1 0 4 0z"/></svg>냉장 창고 · 3.2℃</span><span class="st ok">정상</span></div>
-        <div class="cm-row"><span class="k"><svg viewBox="0 0 24 24" fill="none"><path d="M14 14.76V5a2 2 0 1 0-4 0v9.76a4 4 0 1 0 4 0z"/></svg>냉동 창고 · −19.6℃</span><span class="st ok">정상</span></div>
-        <div class="cm-row"><span class="k"><svg viewBox="0 0 24 24" fill="none"><path d="M14 14.76V5a2 2 0 1 0-4 0v9.76a4 4 0 1 0 4 0z"/></svg>냉동 3호차 · −15.2℃</span><span class="st warn">경고</span></div>
-        <div class="cm-row"><span class="k"><svg viewBox="0 0 24 24" fill="none"><path d="M3 7l9-4 9 4-9 4z"/></svg>안전재고 미만 품목</span><span class="st warn">3건</span></div>
-      </div>
     </div>
-    <div class="section-photo ov reveal" style="margin-top:30px"><img src="images/frozen-warehouse-work.png" alt="냉동 창고에서 작업자가 저온 상품을 점검하며 온도를 관리하는 모습"><span class="cap">냉동 구간 현장 온도 관리</span></div>
   </div></section>
 
   <!-- 역할별 관리 시스템 -->
